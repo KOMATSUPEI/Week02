@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+	/* outline: 1px solid rgb(125, 184, 37); */
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+/* 設定字體＆行高 */
+body{
+	font-family: "Bruno Ace SC",sans-serif;
+	line-height: 1.5;
+}
+
+/*清除圖片下方的空白*/
+img{
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+/*清除文字下底線*/
+a{
+	text-decoration: none;
+	display: inline-block;
+	color: inherit;
+}
+
+/* layout */
+.nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header{
+	background: black;
+	color: #D1D1D1;
+	padding: 40px 0px;
+}
+
+
+/* page */
+.banner{
+	background: black;
+	color: white;
+}
+
+.banner-title-strong{
+	display: block;
+	text-align: right;
+}
+
+.intro{
+	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	padding: 160px 0px;
+}
+
+.intro-width{
+	width: 526px;
+}
+
+.about{
+	padding: 160px 0px;
+}
+
+.contact{
+	padding: 96px 0px;
+	background: linear-gradient(#050014, #01021E);
+}
+
+.social-link{
+	border-radius: 40px;
+	transition: 1s;
+}
+
+.social-link:hover{
+	box-shadow: 0px 0px 16px 3px #9094FFE5;
+}
+
+.about-list-width{
+	width: 636px;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.about-list-width li{
+	width: 48%;
+	box-shadow: 4px 4px 4px 0 rgb(0,0,0,0.08);
+}
+
+.about-width{
+	width: 526px;
+}
+
+/* component */
+.btn{
+	padding: 12px 24px;
+	border-radius: 32px;
+	transition: 1s;
+}
+
+.btn:hover{
+	box-shadow: 0px 0px 16px 10px #00FFA3;
+}
+
+.btn-white{
+	background: white;
+	color: black;
+}
+
+.btn-black{
+	background: black;
+	color: white;
+}
+
+.project{
+	padding: 160px 0px;
+}
+
+.project-title{
+	width: 746px;
+	margin-left: auto;
+}
+
+.footer{
+	padding: 40px 0px;
+	background: black;
+	color: white;
+	text-align: center;
+}
+
+/* 共通 class */
+.container{
+	width: 1296px;
+	margin: 0 auto;
+}
+
+.h1{
+	font-size: 128px;
+}
+
+.h2{
+	font-size: 64px;
+}
+
+.h3{
+	font-size: 40px;
+}
+
+.fs-1{
+	font-size: 32px;
+}
+
+.fs-2{
+	font-size: 24px;
+}
+
+.fs-3{
+	font-size: 20px;
+}
+
+.fs-4{
+	font-size: 16px;
+}
+
+.d-flex{
+	display: flex;
+}
+
+.block{
+	display: block;
+}
+
+.flex-column{
+	flex-direction: column;
+}
+
+.align-items-center{
+	align-items: center;
+}
+
+.align-items-start{
+	align-items: start;
+}
+
+.justify-content-end{
+	justify-content: end;
+}
+
+.justify-content-sb{
+	justify-content: space-between;
+}
+
+.mr-16{
+	margin-right: 16px;
+}
+
+.mr-20{
+	margin-right: 20px;
+}
+
+.mr-24{
+	margin-right: 24px;
+}
+
+.mb-4{
+	margin-bottom: 4px;
+}
+
+.mb-28{
+	margin-bottom: 28px;
+}
+
+.mb-32{
+	margin-bottom: 32px;
+}
+
+.mb-36{
+	margin-bottom: 36px;
+}
+
+.pd-16{
+	padding: 16px;
+}
+
+.keycolor{
+	color: #00FFA3;
+}
+
+.trending{
+	color: white;
+}
